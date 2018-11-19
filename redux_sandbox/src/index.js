@@ -7,7 +7,8 @@ import { initialState } from './reducers/index'
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(familyApp, initialState)
+const store = createStore(familyApp, initialState,
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
   <Provider store={store}>

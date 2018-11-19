@@ -11,7 +11,7 @@ export const toggleResidency = id => ({
   id
 })
 
-export const addChild = name, branch, resident => ({
+export const addChild = (name, branch, resident) => ({
   type: 'ADD_CHILD',
   id: nextChildId++,
   name,

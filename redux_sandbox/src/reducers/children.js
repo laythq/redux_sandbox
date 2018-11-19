@@ -7,7 +7,7 @@ const children = (state = [], action) => {
           id: action.id,
           name: action.name,
           branch: action.branch,
-          resident: action.resident
+          resident: (action.resident === 'true')
         }
       ]
     case 'CHANGE_BRANCH':
